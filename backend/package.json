@@ -1,0 +1,35 @@
+{
+  "name": "flashgrid-backend",
+  "version": "1.0.0",
+  "description": "High-Concurrency Ticket Reservation Engine with Redis Distributed Locks & BullMQ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node src/seed/seedData.js",
+    "test:load": "node benchmarks/loadTest.js"
+  },
+  "dependencies": {
+    "bullmq": "^5.41.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ioredis": "^5.5.0",
+    "mongoose": "^8.10.0",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {},
+  "type": "commonjs",
+  "keywords": [
+    "distributed-systems",
+    "redis",
+    "concurrency",
+    "race-conditions",
+    "websockets",
+    "bullmq",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT"
+}
